@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Varun Kumar</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+
+              // Store hash
+              var hash = this.hash;
+
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+                
+              }, 600, function(){
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+                console.log(hash);
+              });
+            } // End if
+          });
+        });
+    </script>
+</head>
+<body >
+    <div class="container">
+        <div class="nav_bar">
+            <center>
+                <div class="profile_outline"><div class="profile_image"></div></div>
+                <p class="name">Namburi Sai Varun Kumar</p>
+                <p class="occupation">I'm a Pen Tester,<br> SQL Injector,<br> Web Developer.</p>
+                <hr>
+                <div class="details">
+                    <table>
+                        <tr>
+                            <td><b>DOB:</b></td>
+                            <td>25/11/1998</td>
+                        </tr>
+                        <tr>
+                            <td><b>Email:</b></td>
+                            <td>saivarun.2511@gmail.com</td>
+                        </tr>
+                    </table>
+                </div>
+                <hr>
+                <div class="navigation">
+                    <ul>
+                        <li><a href="#aboutme">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#education_container">Education</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <img src="./Images/skills/socialmedia.svg" alt="" class="social_media">
+            </center>
+            
+        </div>
+        <div class="content">
+            <div class="aboutme" id="aboutme">
+                <p class="title">About Me</p>
+             
+                <div class="aboutme_data"><p><b>HI! I'm Sai Varun Kumar</b>, a Pen Tester, web developer and a SQL Injector. I'm pursuing my graduation in computer science and engineering at Mallareddy college of engineering and technology, Hyderabad. I strongly believe in autodidactism, that's how I learnt and became proficient in web development and pen testing.</p><br>
+                <p>I love exploring new technologies. when I came to know about Information security I was very excited and interested in it. Often sometimes I dream about how  the sensitive data is been taken by some hackers without knowing to the user.At the age of 19, I've set my target to become a Chief Information Security  Expert. And I'm currently working on it.</p>
+            </div>
+            </div>
+            <div class="skills" id="skills">
+               <div class="front_end">
+                   <p >Front-end skills</p>
+                   <hr>
+                    <div class="skills_logos">
+                        <img src="./Images/skills/htm5.svg" alt="html5">
+                        <img src="./Images/skills/css3.svg" alt="css3">
+                        <img src="./Images/skills/javascript.svg" alt="javascript">
+                        <img src="./Images/skills/jquery.svg" alt="jquery">
+                    </div>
+               </div>
+               <div class="back_end">
+                   <p >Back-end skills</p>
+                   <hr>
+                    <div class="skills_logos">
+                        <img src="./Images/skills/php.svg" alt="php">
+                        <img src="./Images/skills/nodejs.svg" alt="node.js">
+                        <img src="./Images/skills/mysql.svg" alt="mysql">
+                    </div>
+               </div>
+               <div class="development_tools">
+                   <p >Development tools</p>
+                   <hr>
+                   <div class="skills_logos">
+                       <img src="./Images/skills/git.svg" alt="git">
+                       <img src="./Images/skills/github.svg" alt="github">
+                       <img src="./Images/skills/ps.svg" alt="photoshop">
+                       <img src="./Images/skills/npm.svg" alt="npm"> 
+                   </div>
+               </div>
+            </div>
+            <div class="education_container" id="education_container">
+                <div class="timeline">
+                    <div class="pointer" id="main_pointer"><img src="./Images/school.svg" alt=""></div>
+                    <div class="pointer" id="pointer1"><span></span></div>
+                    <div class="pointer" id="pointer2"><span></span></div>
+                    <div class="pointer" id="pointer3"><span></span></div>
+                </div>
+                <div class="education_details">
+                    <p class="title">Education</p>
+                    <div class="btech">
+                        <p>Mallareddy college of engineering and technology</p>
+                        <p>2016-2020</p>
+                        <p>Currently, I'm pursuing my graduation in computer science and engineering. Till now I have obtained 85% of aggregate alongside some knowledge as a penetration testing and knowledge about real-time project management and deployment. </p>
+                    </div>
+                    <div class="inter">
+                        <p>Sri Chaitanaya jr college</p>
+                        <p>2016</p>
+                        <p>I've completed my intermediate in MPC at vijayawada under Andhra Pradesh Board of Intermediate Education with an aggregate of 97.3 .</p>
+                    </div>
+                    <div class="schooling">
+                        <p>Sri Chaitanaya high school</p>
+                        <p>2014</p>
+                        <p>I have completed my 10th standard under Andhra pradesh state board-SSC with an aggregate of 90%. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="work_container" id="work">
+                    <p>Recent works</p>
+             
+                        <div class="work">
+                            <img src="./work/projects/networksecurity.jpg" alt="">
+                            <p class="title">NetWork Security</p>
+                            <p class="catageory"></p>
+                        </div>
+                        <div class="work">
+                            <img src="./work/projects/sqlinjection.jpg" alt="">
+                            <p class="title">SQL Injection</p>
+                            <p class="catageory"></p>
+                        </div> 
+                                  
+                    <div class="work">
+                        <a href="https://saivarun123.github.io/portfolio/"><img src="./work/projects/pentesting.jpg" alt=""></a>
+                        <p class="title">Pen Testing</p>
+                        <p class="catageory">Exploitation</p>
+                    </div>
+            </div>
+            <div class="contactme" id="contact">
+                <p><b>Contact me!</b></p>
+                <div class="mailme">
+                    <form action="https://formspree.io/saivarun.2511@gmail.com" method="post">
+                        <input type="text" placeholder="Name" name="name"><br>
+                        <input type="text" placeholder="subject" name="subject"><br>
+                        <input type="email" placeholder="Email" name="Email"><br>
+                        <textarea name="message" placeholder="message"  rows="10" ></textarea>
+                        <input type="submit" value="send">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
